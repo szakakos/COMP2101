@@ -1,0 +1,26 @@
+title="Overlord"
+hostname=$(hostname)
+thetime=$(date '+%HH:%MM')
+theday=$(date '+%a')
+
+case $theday in
+	Mon)
+		echo "not again";;
+	Tue)
+		echo "at least it's not yesterday";;
+	Wed)
+		echo "Getting over the hump";;
+	Thu)
+		echo "anyone thirsty yet?";;
+	Fri)
+		echo "Work hard play hard";;
+	Sat|Sun)
+		echo "Living the dream";;
+	*);;
+	
+cat <<EOF
+
+It is a $theday at $thetime
+Welcome to planet $hostname, "$title $USER!"
+
+EOF
