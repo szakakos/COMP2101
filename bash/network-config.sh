@@ -91,4 +91,3 @@ External Name   :$exterName
 Router Address  :$rtrAddress
 Router Name     :$rtrName
 EOF
-
