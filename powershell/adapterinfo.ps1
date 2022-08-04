@@ -1,0 +1,1 @@
+get-ciminstance win32_networkadapterconfiguration | ? ipenabled -eq "true" | Select-Object Description, Index, IPAddress, IPSubnet, DNSDomain, DNSServerSearchOrder | Format-Table -AutoSize
