@@ -1,4 +1,3 @@
-#!/bin/bash
 OS=`hostnamectl | grep "Operating System"` #Get OS name useing hostnamectl and filtering the operating system line.
 IP=`hostname -I` #Get the IP with hostnamectl, with the I argument.
 Space=`df -hT / | awk '{print $4}' | tr -d '\n' | cut -c 5-` #Get the space, get the fourth data set, remove new lines, and then only get after the first 5 characters
