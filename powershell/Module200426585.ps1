@@ -13,7 +13,7 @@ function get-cpuinfo {
 
 function get-mydisks {
 	Get-PhysicalDisk | ft -AutoSize Manufacturer,SerialNumber,FirmwareVersion,Size
-
+}
 	#$diskManu=Get-PhysicalDisk | ft Manufacturer | out-string
 	#$diskSerial=Get-PhysicalDisk | ft SerialNumber | out-string
 	#$diskFirmware=Get-PhysicalDisk | ft FirmwareVersion | out-string
@@ -24,7 +24,8 @@ function get-mydisks {
 	#	Serial=$diskSerial
 	#	Firmware=$diskFirmware
 	#	Size=$diskSize
-	#}
+	#
+
 
 	#$diskObject = New-Object -TypeName PSObject -Property $props
 
